@@ -19,6 +19,17 @@ body {
   background-image: url(images/MOSHED-2018-4-5-21-32-19.gif);
   	 background-size:200% 200%;
   color: #fff;
+    <script>
+    // Listen for the window losing focus
+    window.addEventListener('blur', function() {
+      document.body.style.backgroundColor = 'red';
+    });
+
+    // Optional: Reset background color when the window gains focus again
+    window.addEventListener('focus', function() {
+      document.body.style.backgroundColor = '';
+    });
+  </script>
 }
 
 </style>
